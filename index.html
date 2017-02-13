@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#my-navbar" data-offset="50">
         <!--==========Navigation==========-->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -60,19 +60,19 @@
                     <h2>Feedback <small> Check out the positive feedback.</small></h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <footer>Abraham Lincoln</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <footer>George Washington</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <footer>Thomas Jefferson</footer>
@@ -167,20 +167,20 @@
                     <h2>Features <small> Check out these awesome features</small></h2>
                 </div><!-- End Page Header -->
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-8">
                         <h3>This is the heading</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <img src="http://lorempixel.com/400/320" class="img-responsive" alt="river">
                     </div>
                 </div><!-- End Row -->
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-8">
                         <h3>This is the heading</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <img src="http://lorempixel.com/360/300" class="img-responsive" alt="river">
                     </div>
                 </div><!-- End Row -->
@@ -188,7 +188,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-default text-center">
                             <div class="panel-body">
                                 <span class="glyphicon glyphicon-ok"></span>
@@ -197,7 +197,7 @@
                             </div><!-- End Panel Body -->
                         </div> <!-- End Panel -->
                     </div><!-- End Column -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-default text-center">
                             <div class="panel-body">
                                 <span class="glyphicon glyphicon-star"></span>
@@ -206,7 +206,7 @@
                             </div><!-- End Panel Body -->
                         </div> <!-- End Panel -->
                     </div><!-- End Column -->
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-default text-center">
                             <div class="panel-body">
                                 <span class="glyphicon glyphicon-play-circle"></span>
@@ -219,8 +219,146 @@
             </section>
         </div><!-- End Container -->
 
+        <!-- ==========FAQ========== -->
+        <div class="container">
+            <section>
+                <div class="page-header" id="faq">
+                    <h2>FAQ <small> Engaging with customers.</small></h2>
+                </div><!-- End Page Header -->
 
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                                    What do I do if my computer freezes?
+                                </a>
+                            </div><!-- End Panel Title -->
+                            <div id="collapse-1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div><!-- End Panel Collapse -->
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                                    Where do I report a bug?
+                                </a>
+                            </div><!-- End Panel Title -->
+                            <div id="collapse-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div><!-- End Panel Collapse -->
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                                    When to restart the app?
+                                </a>
+                            </div><!-- End Panel Title -->
+                            <div id="collapse-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div><!-- End Panel Collapse -->
+                        </div>
+                    </div>
+                </div><!-- End Panel Group -->
 
+            </section>
+        </div><!-- End Container -->
+
+        <!-- ==========Contact Us========== -->
+        <div class="container">
+            <section>
+                <div class="page-header" id="contact">
+                    <h2>Contact Us <small>Contact us for more.</small></h2>
+                </div><!-- End Page Header -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Send us a message or contact us at the address below</p>
+
+                        <address>
+                            <strong>Bootstrap App</strong></br>
+                            123 Fake Street</br>
+                            Anytown, USA 98765
+                        </address>
+                    </div>
+                    <div class="col-lg-8">
+                        <form action="" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+                                </div>
+                            </div><!-- End Form Group -->
+                            <div class="form-group">
+                                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-email" placeholder="Enter your email address">
+                                </div>
+                            </div><!-- End Form Group -->
+                            <div class="form-group">
+                                <label for="user-url" class="col-lg-2 control-label">Website</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-url" placeholder="www.YourSite.com">
+                                </div>
+                            </div><!-- End Form Group -->
+                            <div class="form-group">
+                                <label for="user-message" class="col-lg-2 control-label">Message</label>
+                                <div class="col-lg-10">
+                                    <textarea name="user-message" class="form-control" id="user-message" cols="20" rows="10" placeholder="Enter your message"></textarea>
+                                </div>
+                            </div><!-- End Form Group -->
+
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div><!-- End Form Group -->
+                        </form>
+                    </div>
+                </div><!-- End Row -->
+
+            </section>
+        </div><!-- End Container -->
+
+        <!-- ==========FOOTER========== -->
+        <footer>
+            <hr>
+            <div class="container text-center">
+                <h3>Join Our Newsletter <small>Enter your name and email</small></h3>
+
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label for="subscription">Name</label>
+                        <input type="text" class="form-control" id="subscription" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="subscription">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Subscribe</button>
+                </form>
+
+                <hr>
+
+                <ul class="list-inline">
+                    <li><a href="http://www.twitter.com">Twitter</a></li>
+                    <li><a href="http://www.facebook.com">Facebook</a></li>
+                    <li><a href="http://youtube.com">Youtube</a></li>
+                </ul>
+
+                <p>&copy; Bootstrap App 2017</p>
+            </div><!-- End Container -->
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <!-- Lastest compiled and minified JavaScript -->
